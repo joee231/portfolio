@@ -489,26 +489,26 @@ export default function Portfolio() {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
-              className="mb-8"
+              className="mb-6 md:mb-8"
             >
-              <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-500 p-1">
+              <div className="w-24 h-24 md:w-32 md:h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-500 p-1">
                 <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center">
                   <motion.div
                     animate={{ rotate: 360 }}
                     transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
                   >
-                    <Code className="w-16 h-16 text-blue-400" />
+                    <Code className="w-12 h-12 md:w-16 md:h-16 text-blue-400" />
                   </motion.div>
                 </div>
               </div>
             </motion.div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 px-4">
               <motion.span
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-white"
+                className="text-white block sm:inline"
               >
                 Moataz
               </motion.span>{" "}
@@ -516,7 +516,7 @@ export default function Portfolio() {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-blue-400"
+                className="text-blue-400 block sm:inline"
               >
                 El-shimy
               </motion.span>
@@ -526,20 +526,20 @@ export default function Portfolio() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex items-center justify-center gap-2 mb-4"
+              className="flex items-center justify-center gap-2 mb-4 flex-wrap px-4"
             >
               <motion.div
                 animate={{ rotate: [0, 10, -10, 0] }}
                 transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
               >
-                <Rocket className="w-6 h-6 text-blue-400" />
+                <Rocket className="w-5 h-5 md:w-6 md:h-6 text-blue-400" />
               </motion.div>
-              <p className="text-lg sm:text-xl md:text-2xl text-gray-300">Full Stack Developer</p>
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300">Full Stack Developer</p>
               <motion.div
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
               >
-                <Star className="w-6 h-6 text-yellow-400" />
+                <Star className="w-5 h-5 md:w-6 md:h-6 text-yellow-400" />
               </motion.div>
             </motion.div>
 
@@ -547,7 +547,7 @@ export default function Portfolio() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto"
+              className="text-sm sm:text-base md:text-lg text-gray-400 mb-6 md:mb-8 max-w-2xl mx-auto px-4"
             >
               Full Stack Developer with 2 years of experience building scalable web applications. Specialized in Node.js
               backend development, modern frontend frameworks, and delivering end-to-end solutions.
@@ -557,7 +557,7 @@ export default function Portfolio() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
+              className="flex flex-col sm:flex-row gap-4 justify-center px-4"
             >
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button
@@ -594,25 +594,25 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gray-800/50 relative">
+      <section id="about" className="py-12 md:py-20 bg-gray-800/50 relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-8 md:mb-16"
           >
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.6, type: "spring" }}
               viewport={{ once: true }}
-              className="flex items-center justify-center gap-2 mb-4"
+              className="flex items-center justify-center gap-2 mb-4 flex-wrap"
             >
-              <Users className="w-8 h-8 text-blue-400" />
-              <h2 className="text-4xl font-bold">About Me</h2>
-              <Heart className="w-8 h-8 text-red-400" />
+              <Users className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
+              <h2 className="text-2xl md:text-4xl font-bold">About Me</h2>
+              <Heart className="w-6 h-6 md:w-8 md:h-8 text-red-400" />
             </motion.div>
             <motion.div
               initial={{ width: 0 }}
@@ -623,18 +623,18 @@ export default function Portfolio() {
             />
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="relative order-2 md:order-1"
+              className="relative order-2 lg:order-1"
             >
               <motion.div
                 whileHover={{ scale: 1.05, rotate: 2 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                className="w-64 h-64 sm:w-80 sm:h-80 mx-auto rounded-full overflow-hidden shadow-2xl relative"
+                className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 mx-auto rounded-full overflow-hidden shadow-2xl relative"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full animate-pulse"></div>
                 <img
@@ -647,7 +647,7 @@ export default function Portfolio() {
               <motion.div
                 animate={{ y: [-5, 5, -5], rotate: [0, 5, 0] }}
                 transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
-                className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold flex items-center gap-1"
+                className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-blue-500 text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-bold flex items-center gap-1"
               >
                 <Award className="w-4 h-4" />
                 2+ Years
@@ -668,14 +668,14 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="space-y-6"
+              className="space-y-4 md:space-y-6 order-1 lg:order-2"
             >
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-lg text-gray-300 leading-relaxed"
+                className="text-sm md:text-base lg:text-lg text-gray-300 leading-relaxed"
               >
                 I'm a Full Stack Developer with 2 years of experience building and maintaining scalable web applications
                 and enterprise systems. Currently working at Team Ethereal, I've improved system uptime to 99.9% and
@@ -687,7 +687,7 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="text-lg text-gray-300 leading-relaxed"
+                className="text-sm md:text-base lg:text-lg text-gray-300 leading-relaxed"
               >
                 My expertise spans the entire development stack - from Node.js backend development and RESTful APIs to
                 modern frontend frameworks like React and Angular. I'm passionate about delivering complete, secure, and
@@ -699,7 +699,7 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
                 viewport={{ once: true }}
-                className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6"
+                className="grid grid-cols-3 gap-2 sm:gap-4 pt-4 md:pt-6"
               >
                 {[
                   { icon: Coffee, label: "Projects", value: "10+" },
@@ -709,15 +709,15 @@ export default function Portfolio() {
                   <motion.div
                     key={stat.label}
                     whileHover={{ scale: 1.1, y: -5 }}
-                    className="text-center p-4 bg-gray-800/50 rounded-lg border border-gray-700"
+                    className="text-center p-2 sm:p-4 bg-gray-800/50 rounded-lg border border-gray-700"
                   >
                     <motion.div
                       animate={{ rotate: [0, 10, -10, 0] }}
                       transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: index * 0.5 }}
                     >
-                      <stat.icon className="w-8 h-8 text-blue-400 mx-auto mb-2" />
+                      <stat.icon className="w-6 h-6 md:w-8 md:h-8 text-blue-400 mx-auto mb-1 md:mb-2" />
                     </motion.div>
-                    <div className="text-xl font-bold text-white">{stat.value}</div>
+                    <div className="text-lg md:text-xl font-bold text-white">{stat.value}</div>
                     <div className="text-sm text-gray-400">{stat.label}</div>
                   </motion.div>
                 ))}
@@ -728,25 +728,25 @@ export default function Portfolio() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 relative">
+      <section id="skills" className="py-12 md:py-20 relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-8 md:mb-16"
           >
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.6, type: "spring" }}
               viewport={{ once: true }}
-              className="flex items-center justify-center gap-2 mb-4"
+              className="flex items-center justify-center gap-2 mb-4 flex-wrap"
             >
-              <Lightbulb className="w-8 h-8 text-yellow-400" />
-              <h2 className="text-4xl font-bold">Technical Skills</h2>
-              <Sparkles className="w-8 h-8 text-purple-400" />
+              <Lightbulb className="w-6 h-6 md:w-8 md:h-8 text-yellow-400" />
+              <h2 className="text-2xl md:text-4xl font-bold">Technical Skills</h2>
+              <Sparkles className="w-6 h-6 md:w-8 md:h-8 text-purple-400" />
             </motion.div>
             <motion.div
               initial={{ width: 0 }}
@@ -755,12 +755,12 @@ export default function Portfolio() {
               viewport={{ once: true }}
               className="h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto"
             />
-            <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+            <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-sm md:text-base px-4">
               Expertise across the full backend development stack with focus on scalable, secure solutions
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             {skillsData.map((category, categoryIndex) => (
               <motion.div
                 key={category.category}
@@ -858,25 +858,25 @@ export default function Portfolio() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-800/50 relative">
+      <section id="services" className="py-12 md:py-20 bg-gray-800/50 relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-8 md:mb-16"
           >
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.6, type: "spring" }}
               viewport={{ once: true }}
-              className="flex items-center justify-center gap-2 mb-4"
+              className="flex items-center justify-center gap-2 mb-4 flex-wrap"
             >
-              <Settings className="w-8 h-8 text-blue-400" />
-              <h2 className="text-4xl font-bold">Services I Offer</h2>
-              <Rocket className="w-8 h-8 text-orange-400" />
+              <Settings className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
+              <h2 className="text-2xl md:text-4xl font-bold">Services I Offer</h2>
+              <Rocket className="w-6 h-6 md:w-8 md:h-8 text-orange-400" />
             </motion.div>
             <motion.div
               initial={{ width: 0 }}
@@ -885,12 +885,12 @@ export default function Portfolio() {
               viewport={{ once: true }}
               className="h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto"
             />
-            <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+            <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-sm md:text-base px-4">
               Comprehensive backend development and QA services to bring your ideas to life
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             {servicesData.map((service, index) => (
               <motion.div
                 key={service.title}
@@ -960,25 +960,25 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20">
+      <section id="projects" className="py-12 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-8 md:mb-16"
           >
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.6, type: "spring" }}
               viewport={{ once: true }}
-              className="flex items-center justify-center gap-2 mb-4"
+              className="flex items-center justify-center gap-2 mb-4 flex-wrap"
             >
-              <FileCode className="w-8 h-8 text-green-400" />
-              <h2 className="text-4xl font-bold">My Projects</h2>
-              <Star className="w-8 h-8 text-yellow-400" />
+              <FileCode className="w-6 h-6 md:w-8 md:h-8 text-green-400" />
+              <h2 className="text-2xl md:text-4xl font-bold">My Projects</h2>
+              <Star className="w-6 h-6 md:w-8 md:h-8 text-yellow-400" />
             </motion.div>
             <motion.div
               initial={{ width: 0 }}
@@ -989,7 +989,7 @@ export default function Portfolio() {
             />
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={index}
@@ -1088,25 +1088,25 @@ export default function Portfolio() {
       </section>
 
       {/* Experience & Education Section */}
-      <section id="experience" className="py-20 bg-gray-800/50">
+      <section id="experience" className="py-12 md:py-20 bg-gray-800/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-8 md:mb-16"
           >
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.6, type: "spring" }}
               viewport={{ once: true }}
-              className="flex items-center justify-center gap-2 mb-4"
+              className="flex items-center justify-center gap-2 mb-4 flex-wrap"
             >
-              <Briefcase className="w-8 h-8 text-blue-400" />
-              <h2 className="text-4xl font-bold">Experience & Education</h2>
-              <GraduationCap className="w-8 h-8 text-green-400" />
+              <Briefcase className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
+              <h2 className="text-2xl md:text-4xl font-bold text-center">Experience & Education</h2>
+              <GraduationCap className="w-6 h-6 md:w-8 md:h-8 text-green-400" />
             </motion.div>
             <motion.div
               initial={{ width: 0 }}
@@ -1117,7 +1117,92 @@ export default function Portfolio() {
             />
           </motion.div>
 
-          <div className="relative">
+          {/* Mobile Timeline */}
+          <div className="block md:hidden space-y-6">
+            {experiences.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="relative"
+              >
+                <Card className="bg-gray-800 border-gray-700 hover:border-blue-400 transition-all duration-300 group overflow-hidden">
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    animate={{
+                      background: [
+                        "linear-gradient(45deg, rgba(59, 130, 246, 0.05), rgba(147, 51, 234, 0.05))",
+                        "linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(147, 51, 234, 0.05))",
+                        "linear-gradient(225deg, rgba(59, 130, 246, 0.05), rgba(147, 51, 234, 0.05))",
+                        "linear-gradient(315deg, rgba(59, 130, 246, 0.05), rgba(147, 51, 234, 0.05))",
+                      ],
+                    }}
+                    transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY }}
+                  />
+
+                  <CardHeader className="pb-4 relative z-10">
+                    <div className="flex items-start justify-between mb-3 flex-wrap gap-2">
+                      <div className="flex items-center gap-2">
+                        <motion.div whileHover={{ rotate: 360, scale: 1.2 }} transition={{ duration: 0.5 }}>
+                          {item.type === "experience" ? (
+                            <Briefcase className="w-5 h-5 text-blue-400" />
+                          ) : (
+                            <GraduationCap className="w-5 h-5 text-green-400" />
+                          )}
+                        </motion.div>
+                        <span className="text-blue-400 text-sm font-medium">{item.period}</span>
+                      </div>
+                      {item.location && (
+                        <div className="flex items-center gap-1">
+                          <MapPin className="w-3 h-3 text-gray-400" />
+                          <span className="text-gray-400 text-sm">{item.location}</span>
+                        </div>
+                      )}
+                    </div>
+                    <CardTitle className="text-white text-lg md:text-xl mb-2 group-hover:text-blue-300 transition-colors">
+                      {item.title}
+                    </CardTitle>
+                    <CardDescription className="text-blue-400 font-medium text-sm md:text-base flex items-center gap-2">
+                      <motion.div
+                        animate={{ rotate: [0, 5, -5, 0] }}
+                        transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
+                      >
+                        <Award className="w-4 h-4" />
+                      </motion.div>
+                      {item.company}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="pt-0 relative z-10">
+                    <div className="space-y-3">
+                      {item.achievements.map((achievement, achievementIndex) => (
+                        <motion.div
+                          key={achievementIndex}
+                          initial={{ opacity: 0, x: -10 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          transition={{ duration: 0.4, delay: index * 0.1 + achievementIndex * 0.1 }}
+                          viewport={{ once: true }}
+                          whileHover={{ x: 5 }}
+                          className="flex items-start gap-3 group/achievement cursor-pointer"
+                        >
+                          <motion.div whileHover={{ scale: 1.2, rotate: 90 }} transition={{ duration: 0.2 }}>
+                            <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5 group-hover/achievement:text-green-300" />
+                          </motion.div>
+                          <p className="text-gray-300 text-sm leading-relaxed group-hover/achievement:text-white transition-colors">
+                            {achievement}
+                          </p>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Desktop Timeline */}
+          <div className="relative hidden md:block">
             <motion.div
               initial={{ height: 0 }}
               whileInView={{ height: "100%" }}
@@ -1232,25 +1317,25 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20">
+      <section id="contact" className="py-12 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-8 md:mb-16"
           >
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.6, type: "spring" }}
               viewport={{ once: true }}
-              className="flex items-center justify-center gap-2 mb-4"
+              className="flex items-center justify-center gap-2 mb-4 flex-wrap"
             >
-              <MessageSquare className="w-8 h-8 text-blue-400" />
-              <h2 className="text-4xl font-bold">Get In Touch</h2>
-              <Heart className="w-8 h-8 text-red-400" />
+              <MessageSquare className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
+              <h2 className="text-2xl md:text-4xl font-bold">Get In Touch</h2>
+              <Heart className="w-6 h-6 md:w-8 md:h-8 text-red-400" />
             </motion.div>
             <motion.div
               initial={{ width: 0 }}
@@ -1259,13 +1344,13 @@ export default function Portfolio() {
               viewport={{ once: true }}
               className="h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto"
             />
-            <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+            <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-sm md:text-base px-4">
               I'm always open to discussing new opportunities and interesting backend development projects. Let's
               connect and build something scalable together!
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
