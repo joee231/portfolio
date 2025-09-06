@@ -638,7 +638,7 @@ export default function Portfolio() {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full animate-pulse"></div>
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DxlJZt8t3cfMNRkYE5yOgijnpnIrGX.png"
+                  src="/moataz-profile.png"
                   alt="Moataz Mohamed El-shimy"
                   className="w-full h-full object-cover relative z-10"
                 />
